@@ -103,3 +103,22 @@ ansible-doc fetch
 clear
 git status
 git remote -v
+clear
+ls
+cd diveintoansible/
+ls
+ll
+git pull
+clear
+ls
+cd ..
+ls
+cd ..
+ls
+cd ansible/
+ls
+cd diveintoansible/
+ls
+ll
+clear
+ll
