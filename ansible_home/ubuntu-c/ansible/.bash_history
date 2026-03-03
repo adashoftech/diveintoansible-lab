@@ -122,3 +122,69 @@ ls
 ll
 clear
 ll
+clear
+ls
+ssh ubuntu1
+clear
+cat .ssh/id_rsa
+cat .ssh/known_hosts 
+clear
+ssh-keygen -H _F ubuntu1
+ssh-keygen -H -F ubuntu1
+cd .ssh/
+ls
+rm known_hosts 
+clear
+cd ..
+cat .ssh/id_rsa.pub 
+ls
+cd diveintoansible/
+ls
+cd ..
+clear
+sudo apt update 
+sudo apt list
+sudo apt list | grep ssh
+sudo apt list | grep sshpass
+apt upgrade sshpass
+sudo apt upgrade sshpass
+clear
+sudo apt list | grep sshpass
+each password > password.txt
+echo password > password.txt
+clear
+for user in ansible root; do   for os in ubuntu centos;   do    for instance in 1 2 3;    do      sshpass -f password.txt ssh-copy-id -o StrictHostKeyChecking=no ${user}@${os}${instance};    done;   done; done
+rm password.txt 
+clear
+ssh ubuntu1
+clear
+ansible -i,ubuntu1, ubuntu2, ubuntu3, centos1, centos2, centos3 all -m ping
+ansible -i,ubuntu1,ubuntu2,ubuntu3,centos1,centos2,centos3 all -m ping
+rm .ssh/known_hosts 
+clear
+cd diveintoansible/
+cat README.md 
+cd ..
+ls -a
+ansible --version
+ANSIBLE_CONFIG
+clear
+cd diveintoansible/Ansible\ Architecture\ and\ Design/Inventories/
+ping centos1
+clear
+ping all -m ping
+ansible all -m ping
+cd template/
+ansible all -m ping
+clear
+cd ..
+clear
+ssh root@centos1 -p 22
+clear
+ssh root@centos1 -p 2222
+clear
+ls
+cd template/
+ansible all -ping -o
+ansible all -m ping -o
+clear
